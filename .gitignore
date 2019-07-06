@@ -1,0 +1,6 @@
+
+# eclipse java and maven
+/target/
+.project
+.classpath
+.settings
