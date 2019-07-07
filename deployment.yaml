@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-	name: microprofile-deploy
-	labels:
-		apps: microprofile
+  name: microprofile-deploy
+  labels:
+    apps: microprofile
 spec:
-	replicas: 1
-	selector:
-		matchLabels:
-			apps: microprofile-pod
-	template:
-		metadata:
-			labels:
-				app: microprofile-pod
-		spec:
-			containers:
-			- name: teacherseverywhere
-				image: teacherseverywhere:0.0.7
-				ports:
-				- containerPort: 9080
-					name: http
-				- containerPort: 9443
-					name: https
+  replicas: 1
+  selector:
+    matchLabels:
+      apps: microprofile-pod
+  template:
+    metadata:
+      labels:
+        apps: microprofile-pod
+    spec:
+      containers:
+      - name: teacherseverywhere
+        image: teacherseverywhere:0.0.7
+        ports:
+        - containerPort: 9080
+          name: http
+        - containerPort: 9443
+          name: https
