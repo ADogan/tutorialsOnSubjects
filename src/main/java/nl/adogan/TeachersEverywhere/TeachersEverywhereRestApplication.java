@@ -10,10 +10,13 @@ import javax.ws.rs.core.Application;
 /**
  *
  */
-@ApplicationPath("/data")
+@ApplicationPath("/")
+//@ApplicationPath("/data")
 
 @LoginConfig(authMethod = "MP-JWT", realmName = "jwt-jaspi")
 @DeclareRoles({"protected"})
 
 public class TeachersEverywhereRestApplication extends Application {
+	
+	// nothing to configure
 }
