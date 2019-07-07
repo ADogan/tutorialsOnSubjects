@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: teacherseverywhere
-        image: teacherseverywhere:0.0.7
+        image: teacherseverywhere:0.0.8
         ports:
         - containerPort: 9080
           name: http
